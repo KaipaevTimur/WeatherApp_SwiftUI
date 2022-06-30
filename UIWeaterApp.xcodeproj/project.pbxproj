@@ -11,6 +11,8 @@
 		849481C6286E36C100CA6A01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849481C5286E36C100CA6A01 /* ContentView.swift */; };
 		849481C8286E36C200CA6A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849481C7286E36C200CA6A01 /* Assets.xcassets */; };
 		849481CB286E36C200CA6A01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849481CA286E36C200CA6A01 /* Preview Assets.xcassets */; };
+		849481D9286E38D100CA6A01 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849481D8286E38D100CA6A01 /* Extensions.swift */; };
+		849481DD286E406300CA6A01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849481DC286E406300CA6A01 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		849481C5286E36C100CA6A01 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		849481C7286E36C200CA6A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849481CA286E36C200CA6A01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		849481D8286E38D100CA6A01 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		849481DC286E406300CA6A01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				849481C3286E36C100CA6A01 /* UIWeaterAppApp.swift */,
-				849481C5286E36C100CA6A01 /* ContentView.swift */,
+				849481D1286E37CF00CA6A01 /* Views */,
+				849481D6286E382900CA6A01 /* Models */,
+				849481D7286E383900CA6A01 /* Utils */,
 				849481C7286E36C200CA6A01 /* Assets.xcassets */,
 				849481C9286E36C200CA6A01 /* Preview Content */,
 			);
@@ -65,6 +71,62 @@
 				849481CA286E36C200CA6A01 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		849481D1286E37CF00CA6A01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				849481D5286E380E00CA6A01 /* Navigation */,
+				849481D4286E380400CA6A01 /* Components */,
+				849481D3286E37FC00CA6A01 /* Details */,
+				849481D2286E37EC00CA6A01 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		849481D2286E37EC00CA6A01 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				849481C5286E36C100CA6A01 /* ContentView.swift */,
+				849481DC286E406300CA6A01 /* HomeView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		849481D3286E37FC00CA6A01 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		849481D4286E380400CA6A01 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		849481D5286E380E00CA6A01 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		849481D6286E382900CA6A01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		849481D7286E383900CA6A01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				849481D8286E38D100CA6A01 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +200,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				849481C6286E36C100CA6A01 /* ContentView.swift in Sources */,
+				849481DD286E406300CA6A01 /* HomeView.swift in Sources */,
+				849481D9286E38D100CA6A01 /* Extensions.swift in Sources */,
 				849481C4286E36C100CA6A01 /* UIWeaterAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
