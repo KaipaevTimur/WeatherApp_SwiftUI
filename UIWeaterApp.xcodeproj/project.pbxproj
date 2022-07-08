@@ -13,6 +13,10 @@
 		849481CB286E36C200CA6A01 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849481CA286E36C200CA6A01 /* Preview Assets.xcassets */; };
 		849481D9286E38D100CA6A01 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849481D8286E38D100CA6A01 /* Extensions.swift */; };
 		849481DD286E406300CA6A01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849481DC286E406300CA6A01 /* HomeView.swift */; };
+		84F5A46F287871F700B8C6F2 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5A46E287871F700B8C6F2 /* TabBar.swift */; };
+		84F5A471287882D300B8C6F2 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5A470287882D300B8C6F2 /* Shapes.swift */; };
+		84F5A47428788F6800B8C6F2 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 84F5A47328788F6800B8C6F2 /* BottomSheet */; };
+		84F5A4762878A65400B8C6F2 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F5A4752878A65400B8C6F2 /* ForecastView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,9 @@
 		849481CA286E36C200CA6A01 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		849481D8286E38D100CA6A01 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		849481DC286E406300CA6A01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		84F5A46E287871F700B8C6F2 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		84F5A470287882D300B8C6F2 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		84F5A4752878A65400B8C6F2 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F5A47428788F6800B8C6F2 /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,7 @@
 		849481D3286E37FC00CA6A01 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				84F5A4752878A65400B8C6F2 /* ForecastView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -110,6 +119,7 @@
 		849481D5286E380E00CA6A01 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				84F5A46E287871F700B8C6F2 /* TabBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -125,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				849481D8286E38D100CA6A01 /* Extensions.swift */,
+				84F5A470287882D300B8C6F2 /* Shapes.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -145,6 +156,9 @@
 			dependencies = (
 			);
 			name = UIWeaterApp;
+			packageProductDependencies = (
+				84F5A47328788F6800B8C6F2 /* BottomSheet */,
+			);
 			productName = UIWeaterApp;
 			productReference = 849481C0286E36C100CA6A01 /* WeaterApp.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 849481B7286E36C000CA6A01;
+			packageReferences = (
+				84F5A47228788F6800B8C6F2 /* XCRemoteSwiftPackageReference "BottomSheet" */,
+			);
 			productRefGroup = 849481C1286E36C100CA6A01 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,6 +220,9 @@
 				849481DD286E406300CA6A01 /* HomeView.swift in Sources */,
 				849481D9286E38D100CA6A01 /* Extensions.swift in Sources */,
 				849481C4286E36C100CA6A01 /* UIWeaterApp.swift in Sources */,
+				84F5A4762878A65400B8C6F2 /* ForecastView.swift in Sources */,
+				84F5A46F287871F700B8C6F2 /* TabBar.swift in Sources */,
+				84F5A471287882D300B8C6F2 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		84F5A47228788F6800B8C6F2 /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter125/BottomSheet";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84F5A47328788F6800B8C6F2 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84F5A47228788F6800B8C6F2 /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 849481B8286E36C000CA6A01 /* Project object */;
 }
